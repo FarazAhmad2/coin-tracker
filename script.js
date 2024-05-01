@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function fetchDataUsingThen() {
-    // use locally stored data because api is giving error on multiple refresh
+    // use locally stored data for fetching twice because api is giving error on multiple requests
     fetch("./coinData.json")
       .then((response) => response.json())
       .then((data) => {
